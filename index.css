@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
 body {
     background-color: #9A50F9 !important;
 }
 .col {
-    border: 1px solid black;
+    border: 1px solid white;
 }
+
+ .page{
+     min-height: 1024px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Rubik', sans-serif;
+     color: #E5E5E5;
+
+     border: 1px solid black;
+ }
+#page1{
+    padding: 120px;
+}
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+  
+ #page1 h1{
+    font-size: 100px;
+ }
+
