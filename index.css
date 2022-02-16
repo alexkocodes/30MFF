@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rasa&display=swap');
 body {
     background-color: #9A50F9 ;
+    transition: background-color 0.5s;
 }
 
 /*
@@ -49,7 +50,9 @@ body {
     display: flex;
     padding: 250px;
 }
-
+#page2 {
+    background: linear-gradient(180deg, rgba(154,80,249,0) 8%, rgba(0,0,0,1) 20%);
+}
 #page2 h1{
     font-size: 50px;
 }
@@ -80,6 +83,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  
 }
 
 #page3 h1{
@@ -168,4 +172,75 @@ body {
 80% { transform: translate(-1px, -1px) rotate(1deg); }
 90% { transform: translate(1px, 2px) rotate(0deg); }
 100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+.slider:hover {
+    opacity: 1;
+  }
+  
+
+#small_title{
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes heartfade {
+	0% {
+	  opacity : 1;
+  }
+	50% {
+	  opacity : 0;
+  }
+}
+.heart {
+	z-index : 999;
+	animation : heartfade 6s linear;
+	position : absolute; 
+}
+.heart:before,
+.heart:after {
+	content : "";
+	background-color : #fc2a62;
+	position : absolute;
+	height : 30px;
+	width : 45px;
+	border-radius : 15px 0px 0px 15px;
+}
+
+.heart:before {
+	transform : rotate(45deg);
+}
+
+.heart:after {
+	left : 10.5px;
+	transform : rotate(135deg);
 }

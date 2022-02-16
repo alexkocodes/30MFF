@@ -12,7 +12,7 @@
     <title>NYU Life</title>
 </head>
 <body>
-    <div>
+    <div id="container">
         <div id="page1" class="page">
             <h1 id="typedtext"></h1>
             <hr/>
@@ -56,6 +56,13 @@
                     <h1>Love it? You can be one of them too! Apply to NYU now! </h1>
                     <br>
                     <h4>Video credits: Alex Ko and Ngoc Hoang.</h4>
+                    <br>
+                    <h4 id="small_title">Show us how much you love our film!</h4>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                        <p>Love: <span id="demo">0%</span></p>
+                    </div>
+                    <button type="button" id="love_button">Submit!</button>
                 </div>
             </div>
         </div>
